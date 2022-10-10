@@ -86,8 +86,9 @@ public class Main {
 									System.out.println(x.getId() + " - " + x.getNome() + "    R$" + x.getPreco());
 								});
 								System.out.println("Total Venda: R$" + venda.getValor());
+								System.out.println("Percentual da Taxa a ser paga: " + venda.getEmpresa().getTaxa() + "%");
 								System.out.println("Total Taxa a ser paga: R$" + venda.getComissaoSistema());
-								System.out.println("Total Líquido  para empresa"
+								System.out.println("Total Líquido  para empresa R$"
 										+ (venda.getValor() - venda.getComissaoSistema()));
 								System.out.println("************************************************************");
 							}
